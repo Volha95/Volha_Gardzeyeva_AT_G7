@@ -5,8 +5,8 @@ public class Mouse {
     private int age;
 
     Mouse(String n, int a) {
-        name = n;
-        age = a;
+        this.name = n;
+        this.age = a;
     }
 
     public String getName() {
@@ -29,8 +29,4 @@ public class Mouse {
         System.out.println("Я мышь, меня зовут " + name + " и мне " + age + " лет");
     }
 
-    public static void main(String[] args) {
-        Mouse mouse = new Mouse("Mikki", 5);
-        mouse.printMouseDetails();
-    }
 }

@@ -1,12 +1,12 @@
 package homework.day2.basetask;
 
 public class Pineapple {
-    public String grade;
-    public float heatCapacity;
+    private String grade;
+    private float heatCapacity;
 
     Pineapple(String g, float h) {
-        grade = g;
-        heatCapacity = h;
+        this.grade = g;
+        this.heatCapacity = h;
     }
 
     public String getGrade() {
@@ -31,11 +31,6 @@ public class Pineapple {
         } else {
             System.out.println("В ветчине тепла запасается больше :(");
         }
-    }
-
-    public static void main(String[] args) {
-        Pineapple pineapple = new Pineapple("Abacaxi", 2150.0f);
-        pineapple.printPineappleDetails();
     }
 }
 

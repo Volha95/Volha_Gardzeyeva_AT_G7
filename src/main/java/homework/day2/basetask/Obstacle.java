@@ -1,12 +1,12 @@
 package homework.day2.basetask;
 
 public class Obstacle {
-    public String description;
-    public String severity;
+    private String description;
+    private String severity;
 
     Obstacle(String d, String s) {
-        description = d;
-        severity = s;
+        this.description = d;
+        this.severity = s;
     }
 
     public String getDescription() {
@@ -29,8 +29,4 @@ public class Obstacle {
         System.out.println("Возникло " + severity + " препятствие " + description);
     }
 
-    public static void main(String[] args) {
-        Obstacle obstacle = new Obstacle("в виде дыры", "критическое");
-        obstacle.printObstracleDetails();
-    }
 }

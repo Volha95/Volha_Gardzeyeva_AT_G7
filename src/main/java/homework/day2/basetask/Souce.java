@@ -5,8 +5,8 @@ public class Souce {
     private String color;
 
     Souce(String n, String c) {
-        name = n;
-        color = c;
+        this.name = n;
+        this.color = c;
     }
 
     public String getName() {
@@ -29,8 +29,4 @@ public class Souce {
         System.out.println("Это соус " + name + " " + color + " цвета");
     }
 
-    public static void main(String[] args) {
-        Souce souce = new Souce("Hainz", "brown");
-        souce.printSouceDetails();
-    }
 }
