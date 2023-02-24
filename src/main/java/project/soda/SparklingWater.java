@@ -5,10 +5,26 @@ public class SparklingWater extends Water {
         super(color, transparency, smell, temperature);
     }
 
+    private boolean isOpened;
+
     private Bubble[] bubbles;
+
+    SparklingWater() {
+        super.isOpened;
+
+    }
+
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
+    }
+    public void setOpened(boolean isOpened) {
+        if (isOpened) {
+            return;
+        }
+    }
+    private void isOpened() {
+
     }
 
     public void degas() {
@@ -17,5 +33,10 @@ public class SparklingWater extends Water {
             bubbles[i].cramp();
         }
         this.bubbles = null;
+    }
+
+
+    private degas() {
+
     }
 }
