@@ -10,6 +10,8 @@ public class ArrayAndCow {
         object.tot(myArray, 4);
         System.out.println(Arrays.toString(createArray(myArray, 20)));
         System.out.println("сумма равна: " + monthArray(myArray));
+        ArrayAndCow cow = new ArrayAndCow();
+        cow.animal();
 
     }
 
@@ -45,6 +47,13 @@ public class ArrayAndCow {
             }
         }
         return sum;
+    }
+    public void animal() {
+        System.out.println(" " + "^__^");
+        System.out.println(" " + "(oo)" + "\\\\_____");
+        System.out.println("(__)\\)\\/\\   \\");
+        System.out.println("    ||----w |\\");
+        System.out.println("    ||     ||");
     }
 
 
