@@ -13,8 +13,19 @@ public class Bottle {
         this.bubbles = bubbles;
     }
 
+    public Water getWater() {
+        return water();
+    }
 
-    public void open(SparklingWater sparklingWater) {
-        sparklingWater.degas();
+    public void setWater(Water water) {
+        this.water = water;
+    }
+    public void open() {
+    this.water.setOpened(true);
+    }
+    public void warm(int temperature) {
+        Water temp = new Water() {
+            private int temperature = temp.getTemperature();
+        }
     }
 }
