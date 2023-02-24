@@ -11,5 +11,8 @@ public class Bubble {
     public static void cramp() {
         System.out.println("Cramp!");
     }
+    public double getVolume() {
+        return volume;
+    }
 
 }
