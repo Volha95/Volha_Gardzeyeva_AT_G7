@@ -5,17 +5,18 @@ import java.time.LocalDate;
 
 public class ArrayAndCow {
     public static void main(String[] args) {
-        ArrayAndCow object = new ArrayAndCow();
+        ArrayAndCow arrayAndCow = new ArrayAndCow();
         int[] myArray = {1, 14, 15, 20, 27, 28, 30, 31, 74, 80};
-        object.tot(myArray, 4);
-        System.out.println(Arrays.toString(createArray(myArray, 20)));
-        System.out.println("сумма равна: " + monthArray(myArray));
-        ArrayAndCow cow = new ArrayAndCow();
-        cow.animal();
+        arrayAndCow.arraySum(myArray, 4);
+        arrayAndCow.createArray(myArray,20);
+        System.out.println("новый массив: " + Arrays.toString(myArray));
+        arrayAndCow.monthArray(myArray);
+        System.out.println("сумма равна: " + Arrays.toString(myArray));
+        arrayAndCow.animal();
 
     }
 
-    public void tot(int[] array, int n) {
+    public void arraySum(int[] array, int n) {
         int sum = 0;
         for (int i = n; i < array.length; i = i + n) {
             sum = sum + array[i - 1];
@@ -23,7 +24,7 @@ public class ArrayAndCow {
         System.out.println("Сумма элементов массива: " + sum);
     }
 
-    public static int[] createArray(int[] array, int n) {
+    public int[] createArray(int[] array, int n) {
         ArrayList<Integer> myArrayList = new ArrayList<>();
         for (int i = 0; i < array.length; i++) {
             if (array[i] > n) {
@@ -37,7 +38,7 @@ public class ArrayAndCow {
         return newArray;
     }
 
-    public static int monthArray(int[] array) {
+    public int monthArray(int[] array) {
         LocalDate date = LocalDate.now();
         int month = date.getMonthValue();
         int sum = 0;
