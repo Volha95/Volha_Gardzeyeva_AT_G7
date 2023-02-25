@@ -6,7 +6,7 @@ abstract class Water {
     private String smell = "no";
     private int temperature = 0;
 
-    public Water(String color, String transparency, String smell, int temperature) {
+    Water(String color, String transparency, String smell, int temperature) {
         this.color = color;
         this.transparency = transparency;
         this.smell = smell;
@@ -44,6 +44,4 @@ abstract class Water {
     public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
-
-
 }
