@@ -1,19 +1,12 @@
 package project.soda;
 
 public class SparklingWater extends Water {
-    public SparklingWater(String color, String transparency, String smell, int temperature) {
-        super(color, transparency, smell, temperature);
-    }
-
     private boolean isOpened;
-
     private Bubble[] bubbles;
 
     SparklingWater() {
-        super.isOpened;
-
+        this.isOpened();
     }
-
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
@@ -25,7 +18,7 @@ public class SparklingWater extends Water {
 
     private void isOpened() {
         if (this.isOpened) {
-        this.degas();
+            this.degas();
         }
     }
 
@@ -38,7 +31,7 @@ public class SparklingWater extends Water {
     }
 
 
-    private degas() {
-
-    }
+//    private degas() {
+//
+//    }
 }
