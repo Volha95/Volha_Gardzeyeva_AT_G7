@@ -8,8 +8,11 @@ public class Bubble {
         this.gas = gas;
     }
 
-    public static void cramp() {
+    public void cramp() {
         System.out.println("Cramp!");
     }
 
+    public double getVolume() {
+        return volume;
+    }
 }
