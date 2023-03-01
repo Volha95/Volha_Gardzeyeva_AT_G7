@@ -1,4 +1,21 @@
 package homework.day5.playground.essence.creatures;
 
-abstract class Plant extends  Matter{
+import homework.day5.playground.essence.Matter;
+
+abstract class Plant extends Matter {
+    protected String name;
+
+
+    Plant(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
 }
