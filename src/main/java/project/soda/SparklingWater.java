@@ -5,6 +5,7 @@ public class SparklingWater extends Water {
     private Bubble[] bubbles;
 
     SparklingWater() {
+        super( );
         this.isOpened();
     }
 

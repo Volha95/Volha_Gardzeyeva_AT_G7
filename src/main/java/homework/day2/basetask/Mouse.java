@@ -4,9 +4,9 @@ public class Mouse {
     private String name;
     private int age;
 
-    Mouse(String n, int a) {
-        this.name = n;
-        this.age = a;
+    Mouse(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {
