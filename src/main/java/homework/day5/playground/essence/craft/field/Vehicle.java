@@ -7,7 +7,8 @@ import homework.day5.playground.essence.craft.Transportable;
 abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
 
-    Vehicle(String name) {
+    public Vehicle(int mass, String name) {
+        super(mass);
         this.name = name;
     }
 

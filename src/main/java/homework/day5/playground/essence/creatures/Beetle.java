@@ -1,20 +1,23 @@
 package homework.day5.playground.essence.creatures;
 
 public class Beetle extends Insect implements Crowlable {
-    public static void main(String[] args) {
-        Beetle ob = new Beetle();
-        ob.nest();
+
+    public Beetle(int mass, String name) {
+        super(mass, name);
     }
-    int y = mass;
-    String name;
+
     Beetle beetle = new Beetle();
 
+    public String toString(){
+        return
+    }
+
     public void nest(Carrot home) {
-        int d = home.x / y;
+        int d = Carrot/ this.mass;
         if (beetle.y > home.x) {
             System.out.printf("I am %s and I will nest there with %s my family members!", name, d);
         } else {
-            System.out.printf("This carrot is too small for nesting :(");
+            System.out.println("This carrot is too small for nesting :(");
         }
     }
 }

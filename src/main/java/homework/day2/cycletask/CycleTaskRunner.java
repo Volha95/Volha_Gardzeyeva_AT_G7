@@ -17,6 +17,8 @@ public class CycleTaskRunner {
         MassiveSquare xoxo7 = new MassiveSquare();
         xoxo7.taskMassive5();
         MassiveMin xoxo8 = new MassiveMin();
+        xoxo8.minElement();
+        System.out.println("минимальное значение массива: ");
         MassiveSwap xoxo9 = new MassiveSwap();
         xoxo9.swap();
         MassiveSort xoxo10 = new MassiveSort();

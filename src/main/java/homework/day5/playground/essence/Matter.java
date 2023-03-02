@@ -3,11 +3,8 @@ package homework.day5.playground.essence;
 public abstract class Matter {
     protected int mass;
 
-    Matter(int mass) {
+    public Matter(int mass) {
         this.mass = mass;
-    }
-
-    protected Matter() {
     }
 
     public int getMass(){
