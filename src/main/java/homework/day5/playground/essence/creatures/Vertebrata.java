@@ -1,19 +1,23 @@
 package homework.day5.playground.essence.creatures;
 
 public abstract class Vertebrata extends Animal {
+    Insect food;
     public Vertebrata(int mass, String name) {
         super(mass, name);
         this.name = name;
     }
 
-    Insect food = new Mosquito();
+    public Vertebrata(String name, Plant food, Insect food1) {
+        super(name, food);
+        this.food = food1;
+    }
 
     public String toString() {
-        return name + food;
+        return this.name;
     }
 
     public void eat(Insect food) {
-        this.food = food;
-        System.out.printf("I am %s and I am eating %s", food.toString());
+
+        System.out.printf("I am %s and I am eating %s", toString(), food);
     }
 }

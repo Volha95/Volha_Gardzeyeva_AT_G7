@@ -1,5 +1,6 @@
 package homework.day5.playground.essence.creatures;
 
+
 public class Beetle extends Insect implements Crowlable {
 
     public Beetle(int mass, String name) {

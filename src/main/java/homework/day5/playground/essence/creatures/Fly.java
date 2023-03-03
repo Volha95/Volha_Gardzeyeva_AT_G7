@@ -5,7 +5,6 @@ import homework.day5.playground.essence.Flyable;
 public class Fly extends Insect implements Flyable {
 
     String direction;
-    Fly fly = new Fly();
 
     public Fly(int mass, String name, String direction) {
         super(mass, name);
@@ -17,16 +16,15 @@ public class Fly extends Insect implements Flyable {
         super(mass, name);
     }
 
-    public Fly(){
+    public Fly() {
     }
 
     public String toString() {
-        return this.getClass().getSimpleName() + name + direction;
+        return this.name;
     }
 
     public void fly(String direction) {
-        this.direction = direction;
 
-        System.out.printf(" I am %s, my name is %s and I am do flying to %s", fly.toString());
+        System.out.printf(" I am %s, my name is %s and I am do flying to %s", getClass().getSimpleName(), toString(), direction);
     }
 }

@@ -6,11 +6,11 @@ import static homework.day5.playground.utils.DirectionGenerator.generateDirectio
 
 public class FlyableProcessor {
 
-    Flyable flyable = new Mosquito();
+    Flyable flyable;
 
     public void runFlyable(Flyable flyable) {
-
-        flyable.fly("");
+        this.flyable = flyable;
+        flyable.fly(generateDirection());
     }
 
     public void runFlyable(Flyable flyable, String direction) {
