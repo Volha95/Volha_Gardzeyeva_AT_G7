@@ -4,10 +4,16 @@ import homework.day5.playground.essence.Matter;
 
 public abstract class Animal extends Matter {
     protected String name;
+    Plant food;
 
     public Animal(int mass, String name) {
         super(mass);
         this.name = name;
+    }
+
+    public Animal(String name, Plant food) {
+        this.name = name;
+        this.food = food;
     }
 
     public Animal() {
@@ -23,13 +29,11 @@ public abstract class Animal extends Matter {
     }
 
     public String toString() {
-        return this.name + food;
+        return this.name;
     }
 
-    Plant food = new Potato();
-
     public void eat(Plant food) {
-        this.food = food;
-        System.out.printf("I am %s and I am eating %s", food.toString());
+
+        System.out.printf("I am %s and I am eating %s", toString(), food);
     }
 }

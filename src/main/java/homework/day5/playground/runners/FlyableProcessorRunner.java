@@ -28,6 +28,7 @@ public class FlyableProcessorRunner {
         Rocket aRocket = new Rocket(7623, "Super Heavy Rocket");
         Fly aFly = new Fly(23, "Domestica Fly");
         Mosquito aMosquito = new Mosquito(12, "Vulgaris Mosquito");
+
         flyableProcessor.runFlyable(flyableCopter);
         flyableProcessor.runFlyable(flyablePlane);
         flyableProcessor.runFlyable(flyableCopter);
@@ -37,13 +38,15 @@ public class FlyableProcessorRunner {
         flyableProcessor.runFlyable(aircraftCopter);
         flyableProcessor.runFlyable(aircraftPlane);
         flyableProcessor.runFlyable(aircraftRocket);
-//        flyableProcessor.runFlyable(insectFly);
-//        flyableProcessor.runFlyable(insectMosquito);
+        flyableProcessor.runFlyable((Flyable) insectFly);
+        flyableProcessor.runFlyable((Flyable) insectMosquito);
         flyableProcessor.runFlyable(aCopter);
         flyableProcessor.runFlyable(aPlane);
         flyableProcessor.runFlyable(aRocket);
         flyableProcessor.runFlyable(aFly);
         flyableProcessor.runFlyable(aMosquito);
-    }
 
+        flyableProcessor.runFlyable(flyablePlane, "nowhere");
+        flyableProcessor.runFlyable(flyableRocket, "everywhere");
+    }
 }

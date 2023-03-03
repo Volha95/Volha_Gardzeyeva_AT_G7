@@ -9,8 +9,8 @@ public class FlyableProcessor {
     Flyable flyable = new Mosquito();
 
     public void runFlyable(Flyable flyable) {
-
-        flyable.fly("");
+        this.flyable = flyable;
+        flyable.fly(generateDirection());
     }
 
     public void runFlyable(Flyable flyable, String direction) {
