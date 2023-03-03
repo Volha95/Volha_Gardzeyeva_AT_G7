@@ -1,9 +1,11 @@
 package homework.day5.playground.essence.creatures;
 
 public class Carrot extends Vegetable {
-    int x = mass;
+    public Carrot(int mass, String name) {
+        super(mass, name);
+        this.mass = mass;
+    }
 
-    Carrot home = new Carrot();
-
-
+    public Carrot() {
+    }
 }

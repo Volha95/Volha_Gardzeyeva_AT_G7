@@ -2,12 +2,15 @@ package homework.day5.playground.essence.creatures;
 
 import homework.day5.playground.essence.Matter;
 
-abstract class Plant extends Matter {
+public abstract class Plant extends Matter {
     protected String name;
 
-
-    Plant(String name) {
+    public Plant(int mass, String name) {
+        super(mass);
         this.name = name;
+    }
+    public Plant(){
+        super();
     }
 
     public String getName() {
@@ -17,5 +20,4 @@ abstract class Plant extends Matter {
     public void setName(String name) {
         this.name = name;
     }
-
 }
