@@ -10,6 +10,10 @@ public abstract class Animal extends Matter {
         this.name = name;
     }
 
+    public Animal() {
+        super();
+    }
+
     public String getName() {
         return name;
     }
@@ -18,11 +22,14 @@ public abstract class Animal extends Matter {
         this.name = name;
     }
 
-    public String toString(){
-        return this.name;
+    public String toString() {
+        return this.name + food;
     }
-    public void eat(Insect food) {
 
-        System.out.printf("I am %s and I am eating %s");
+    Plant food = new Potato();
+
+    public void eat(Plant food) {
+        this.food = food;
+        System.out.printf("I am %s and I am eating %s", food.toString());
     }
 }

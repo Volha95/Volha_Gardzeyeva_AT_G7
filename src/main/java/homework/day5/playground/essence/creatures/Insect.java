@@ -5,4 +5,7 @@ public abstract class Insect extends Animal {
         super(mass, name);
     }
 
+    public Insect() {
+        super();
+    }
 }

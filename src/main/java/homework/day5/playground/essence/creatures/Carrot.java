@@ -6,18 +6,6 @@ public class Carrot extends Vegetable {
         this.mass = mass;
     }
 
-    Carrot home = new Carrot();
-
-
-    @Override
-    public String getName() {
-        return name;
+    public Carrot() {
     }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-
 }

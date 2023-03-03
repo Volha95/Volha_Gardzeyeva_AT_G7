@@ -9,6 +9,9 @@ public abstract class Plant extends Matter {
         super(mass);
         this.name = name;
     }
+    public Plant(){
+        super();
+    }
 
     public String getName() {
         return name;

@@ -7,9 +7,9 @@ public class Mosquito extends Insect implements Flyable {
     public Mosquito(int mass, String name) {
         super(mass, name);
     }
-
-    public void fly(String direction) {
-
+    public Mosquito(){
     }
 
+    public void fly(String direction) {
+    }
 }
