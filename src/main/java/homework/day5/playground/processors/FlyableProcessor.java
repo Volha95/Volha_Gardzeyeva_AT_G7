@@ -6,7 +6,7 @@ import static homework.day5.playground.utils.DirectionGenerator.generateDirectio
 
 public class FlyableProcessor {
 
-    Flyable flyable = new Mosquito();
+    Flyable flyable;
 
     public void runFlyable(Flyable flyable) {
         this.flyable = flyable;

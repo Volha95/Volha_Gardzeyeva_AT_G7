@@ -4,7 +4,7 @@ import homework.day5.playground.essence.Matter;
 import homework.day5.playground.essence.craft.Rideable;
 import homework.day5.playground.essence.craft.Transportable;
 
-abstract class Vehicle extends Matter implements Transportable, Rideable {
+public abstract class Vehicle extends Matter implements Transportable, Rideable {
     protected String name;
     int pointA;
     int pointB;
@@ -30,7 +30,8 @@ abstract class Vehicle extends Matter implements Transportable, Rideable {
         return this.name;
     }
     public int move(int pointA, int pointB){
+        int AB = pointB - pointA;
         System.out.printf("I am %s, my name is %s and I am moving from point %d to point %d", getClass().getSimpleName(),toString(), pointA, pointB);
-        return pointB - pointA;
+        return AB;
     }
 }
