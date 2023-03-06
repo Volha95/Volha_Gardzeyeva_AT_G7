@@ -5,7 +5,7 @@ public class CoordinatesGenerator {
         int pointA = 1;
         int pointB = 80;
         int AB = pointA + (int) (Math.random() * pointB);
-        System.out.println("CoordinatesGenerator: I have generated point with value: " + AB);
+        System.out.printf("CoordinatesGenerator: I have generated point with value: %d\n", AB);
         return AB;
     }
 }
