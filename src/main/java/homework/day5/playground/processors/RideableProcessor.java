@@ -5,10 +5,14 @@ import homework.day5.playground.essence.craft.Rideable;
 import static homework.day5.playground.utils.DirectionGenerator.generateDirection;
 
 public class RideableProcessor {
-    Rideable rideable;
+    Rideable rideable = new Rideable() {
+        @Override
+        public void drive(String direction) {
+
+        }
+    };
 
     public void runRideable(Rideable rideable) {
-        this.rideable = rideable;
         rideable.drive(generateDirection());
     }
     public void runRideable(Rideable rideable, String direction){

@@ -17,10 +17,6 @@ public class Beetle extends Insect implements Crawlable {
         this.distance = distance;
     }
 
-    public Beetle() {
-        super();
-    }
-
     Carrot home = new Carrot();
 
     public String toString() {

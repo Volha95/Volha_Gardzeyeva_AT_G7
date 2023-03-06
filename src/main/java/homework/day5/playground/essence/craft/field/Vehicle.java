@@ -39,9 +39,8 @@ public abstract class Vehicle extends Matter implements Transportable, Rideable 
     }
 
     public int move(int pointA, int pointB) {
-        int AB = pointB - pointA;
-        System.out.printf("I am %s, my name is %s and I am moving from point %d to point %d\n", getClass().getSimpleName(), toString(), pointA, pointB);
-        return AB;
+        System.out.printf("I am %s, my name is %s and I am moving from point %d to point %d\n", getClass().getSimpleName(), this.name, pointA, pointB);
+        return pointB - pointA;
     }
 
     public void drive(String direction) {
