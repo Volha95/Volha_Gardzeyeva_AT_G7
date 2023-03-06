@@ -14,6 +14,5 @@ public class Car extends Vehicle  {
     public int move(int pointA, int pointB) {
         return pointB - pointA;
     }
-
 }
 

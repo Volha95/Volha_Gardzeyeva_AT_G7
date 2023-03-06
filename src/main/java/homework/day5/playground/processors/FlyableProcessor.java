@@ -6,10 +6,14 @@ import static homework.day5.playground.utils.DirectionGenerator.generateDirectio
 
 public class FlyableProcessor {
 
-    Flyable flyable;
+    Flyable flyable = new Flyable() {
+        @Override
+        public void fly(String direction) {
+
+        }
+    };
 
     public void runFlyable(Flyable flyable) {
-        this.flyable = flyable;
         flyable.fly(generateDirection());
     }
 
