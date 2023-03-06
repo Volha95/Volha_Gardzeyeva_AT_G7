@@ -11,22 +11,22 @@ public class Bottle {
         }
     }
 
-    public void open() {
-        water.degas();
-    }
-
-    public Water getWater() {
-        return water();
-    }
-
-    public void setWater(Water water) {
-        this.water = water;
-    }
-}
+//    public void open() {
+//        water.degas();
+//    }
+//
+//    public Water getWater() {
+//        return water();
+//    }
+//
+//    public void setWater(Water water) {
+//        this.water = water;
+//    }
+//}
 
 //    public void warm(int temperature) {
 //        Water temp = new Water() {
 //            private int temperature = temp.getTemperature();
 //        }
-//    }
+    }
 

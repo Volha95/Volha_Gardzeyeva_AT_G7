@@ -14,6 +14,6 @@ public class ArrayNumericVariables {
         }
         System.out.print("String : " + str);
         System.out.print("\nInteger array : "
-                + Arrays.toString(array));
+                + Arrays.toString(array) + "\n");
     }
 }
