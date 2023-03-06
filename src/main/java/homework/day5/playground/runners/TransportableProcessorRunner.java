@@ -65,5 +65,8 @@ public class TransportableProcessorRunner {
         transportableProcessor.runTransportable(aCar);
         transportableProcessor.runTransportable(aMoped);
         transportableProcessor.runTransportable(aMotorbike);
+
+        transportableProcessor.runTransportable(transportableCopter, 23, 242);
+        transportableProcessor.runTransportable(transportableMotorbike, 93,7);
     }
 }

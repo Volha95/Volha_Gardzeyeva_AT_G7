@@ -18,6 +18,6 @@ public abstract class Vertebrata extends Animal {
 
     public void eat(Insect food) {
 
-        System.out.printf("I am %s and I am eating %s", toString(), food);
+        System.out.printf("I am %s and I am eating %s\n", this.name, food);
     }
 }
