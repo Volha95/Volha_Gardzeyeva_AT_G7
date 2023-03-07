@@ -1,12 +1,11 @@
 package homework.day5.stringtask;
 
 public class DuplicateWords {
-    String text;
+    String text = "Big black bug bit a big black dog on his big black nose";
     public void printDuplicateWords(String text) {
-        String str = "Big black bug bit a big black dog on his big black nose";
         int count;
-        str = str.toLowerCase();
-        String[] words = str.split(" ");
+        text = text.toLowerCase();
+        String[] words = text.split(" ");
         System.out.println("Duplicate words in a given string : ");
         for (int i = 0; i < words.length; i++) {
             count = 1;

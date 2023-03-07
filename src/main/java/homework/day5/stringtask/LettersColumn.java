@@ -2,11 +2,12 @@ package homework.day5.stringtask;
 
 public class LettersColumn {
 
-    String text;
+    String text = "Hello";
 
     public void printLettersColumn(String text) {
-        this.text = text;
-        String str = "H\ne\nl\nl\no\n";
-        System.out.printf(str);
+        char[] textToArray = text.toCharArray();
+        for (int i = 0; i < textToArray.length; i++) {
+            System.out.printf(textToArray[i] + "\n");
+        }
     }
 }
