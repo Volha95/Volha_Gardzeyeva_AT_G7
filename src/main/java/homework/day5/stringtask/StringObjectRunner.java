@@ -11,7 +11,11 @@ public class StringObjectRunner {
         duplicateWords.printDuplicateWords("Big black bug bit a big black dog on his big black nose");
         ArrayNumericVariables arrayNumericVariables = new ArrayNumericVariables();
         arrayNumericVariables.printArray("123");
+        CurrentDate currentDate = new CurrentDate();
+        currentDate.printCurrentDate();
         DateFormat dateFormat = new DateFormat();
         dateFormat.printFormatDate("22.00 07.09.2020");
+        DateNCurrentDate dateNCurrentDate = new DateNCurrentDate();
+        dateNCurrentDate.printGeneratedDate("7 march");
     }
 }
