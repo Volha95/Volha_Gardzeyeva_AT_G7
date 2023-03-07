@@ -6,10 +6,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class DateNCurrentDate {
+public class StaticDateNCurrentDate {
     String text = "7 марта";
 
-    public void printGeneratedDate(String text) throws ParseException {
+    public static void printGeneratedDate(String text) throws ParseException {
         Date date = new Date();
         SimpleDateFormat formatDate = new SimpleDateFormat("d MMMM", new Locale("ru"));
         String txt = formatDate.format(date);

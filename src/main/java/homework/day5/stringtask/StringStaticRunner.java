@@ -9,5 +9,6 @@ public class StringStaticRunner {
         StaticArrayNumericVariables.printArray("Big black 1 bug bit a big black 2 dogs on their big black 3 noses");
         StaticCurrentDate.printCurrentDate();
         StaticDateFormat.printFormatDate("22.00 07.09.2020");
+        StaticDateNCurrentDate.printGeneratedDate("7 марта");
     }
 }
