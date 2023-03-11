@@ -1,6 +1,6 @@
-package project.soda;
+package project.liquid;
 
-abstract class Water {
+public abstract class Water {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";
@@ -11,6 +11,9 @@ abstract class Water {
         this.transparency = transparency;
         this.smell = smell;
         this.temperature = temperature;
+    }
+    public Water(){
+
     }
 
     public String getColor() {

@@ -11,6 +11,8 @@ public class StringObjectRunner {
         duplicateWords.printDuplicateWords("Big black bug bit a big black dog on his big black nose");
         ArrayNumericVariables arrayNumericVariables = new ArrayNumericVariables();
         arrayNumericVariables.printArray("123");
+        LogText logText = new LogText();
+        logText.printIP("access_log.2020.09.07 212.168.101.5 granted", "access_log.2020.09.07 212.168.101.6 denied", "access_log.2020.09.07 212.168.101.6 denied", "access_log.2020.09.07 212.168.122.6 denied");
         CurrentDate currentDate = new CurrentDate();
         currentDate.printCurrentDate();
         DateFormat dateFormat = new DateFormat();
