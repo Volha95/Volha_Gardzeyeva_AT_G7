@@ -1,8 +1,8 @@
 package homework.day5.stringtask;
 
-public class DuplicateWords {
+public class StaticDuplicateWords {
     String text = "Big black bug bit a big black dog on his big black nose";
-    public void printDuplicateWords(String text) {
+    public static void printDuplicateWords(String text) {
         int count;
         text = text.toLowerCase();
         String[] words = text.split(" ");

@@ -2,10 +2,10 @@ package homework.day5.stringtask;
 
 import java.util.Arrays;
 
-public class ArrayNumericVariables {
+public class StaticArrayNumericVariables {
     String text = "Big black 1 bug bit a big black 2 dogs on their big black 3 noses";
 
-    public void printArray(String text) {
+    public static void printArray(String text) {
         String numberOnly = text.replaceAll("[^0-9]", "");
         String[] string = numberOnly.split(" ");
         int[] array = new int[string.length];

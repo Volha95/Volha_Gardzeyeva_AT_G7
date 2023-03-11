@@ -1,12 +1,17 @@
-package project.soda;
+package project.liquid;
+
+import project.bubbles.Bubble;
 
 public class SparklingWater extends Water {
     private boolean isOpened;
     private Bubble[] bubbles;
 
-    SparklingWater() {
-        super( );
-        this.isOpened();
+    SparklingWater(String color, String transparency, String smell, int temperature) {
+        super(color, transparency, smell, temperature);
+    }
+
+    public SparklingWater() {
+//        this.isOpened;
     }
 
     public void pump(Bubble[] bubbles) {
@@ -17,22 +22,16 @@ public class SparklingWater extends Water {
         this.isOpened = isOpened;
     }
 
+    //
     private void isOpened() {
-        if (this.isOpened) {
-            this.degas();
-        }
+
     }
 
-    public void degas() {
+    private void degas() {
         Bubble[] bubbles = this.bubbles;
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i].cramp();
         }
         this.bubbles = null;
     }
-
-
-//    private degas() {
-//
-//    }
 }

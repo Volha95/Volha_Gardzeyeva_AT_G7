@@ -1,4 +1,4 @@
-package project.soda;
+package project.bubbles;
 
 public class Bubble {
     private double volume = 0.3;
