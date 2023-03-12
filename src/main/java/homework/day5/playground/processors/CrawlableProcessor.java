@@ -18,10 +18,10 @@ public class CrawlableProcessor {
     }
 
     public void runCrawlable(Crawlable crawlable, String direction) {
-        crawlable.crawl("EAST", generateDistance());
+        crawlable.crawl(direction, generateDistance());
     }
 
     public void runCrawlable(Crawlable crawlable, String direction, int distance) {
-        crawlable.crawl("NORTH", 50);
+        crawlable.crawl(direction, distance);
     }
 }
