@@ -1,4 +1,4 @@
-package homework.day6;
+package homework.day6.generics;
 
 public class GenericMethodsInGenericClassT<T> {
     T obj1;

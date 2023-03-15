@@ -1,4 +1,4 @@
-package homework.day6;
+package homework.day6.generics;
 
 import homework.day5.playground.essence.craft.air.Copter;
 import homework.day5.playground.essence.craft.air.Plane;
@@ -9,6 +9,7 @@ import homework.day5.playground.essence.craft.field.Motorbike;
 import homework.day5.playground.essence.craft.hand.*;
 import homework.day5.playground.essence.creatures.*;
 import homework.day5.playground.essence.material.*;
+import homework.day6.generics.GenericMethodsInGenericClassT;
 
 public class GenericMethodsInGenericClassTRunner {
     public static void main(String[] args) {
@@ -108,7 +109,7 @@ public class GenericMethodsInGenericClassTRunner {
         System.out.println(genericMethodsCopter.genericMethodTwoGenArgs(new Copter(85964444, "Ка-62"), new Copter(765463411, "Ка-226Т")));
         genericMethodsCopter.genericMethodHalfGenArgs(new Copter(467676784, "Bell 206B Jet Ranger"), "Person");
 
-        genericMethodsRocket.genericMethodOneGenArg(new Rocket(50000, " Black Brant"));
+        genericMethodsRocket.genericMethodOneGenArg(new Rocket(50000, "Black Brant"));
         System.out.println(genericMethodsRocket.genericMethodTwoGenArgs(new Rocket(10000, "Victoria"), new Rocket(45000, "Союз-2.1а")));
         genericMethodsRocket.genericMethodHalfGenArgs(new Rocket(200001, "Союз ТМА-3"), "school");
 
