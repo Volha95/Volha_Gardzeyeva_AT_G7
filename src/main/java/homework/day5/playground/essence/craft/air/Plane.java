@@ -10,6 +10,5 @@ public class Plane extends Aircraft {
 
     @Override
     public void fly(String direction) {
-
     }
 }

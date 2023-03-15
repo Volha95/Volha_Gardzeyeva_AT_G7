@@ -2,7 +2,7 @@ package homework.day5.playground.essence.craft.hand;
 
 import homework.day5.playground.essence.Matter;
 
-abstract class Container extends Matter {
+public abstract class Container extends Matter {
     protected String name;
 
     public Container(int mass, String name) {

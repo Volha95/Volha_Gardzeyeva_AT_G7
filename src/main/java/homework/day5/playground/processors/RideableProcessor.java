@@ -16,6 +16,6 @@ public class RideableProcessor {
         rideable.drive(generateDirection());
     }
     public void runRideable(Rideable rideable, String direction){
-        rideable.drive("WEST");
+        rideable.drive(direction);
     }
 }
