@@ -12,14 +12,11 @@ public class Beetle extends Insect implements Crawlable {
         this.name = name;
     }
 
-    Carrot home = new Carrot();
-
     public String toString() {
         return this.name;
     }
 
     public void nest(Carrot home) {
-        this.home = home;
         int d = home.getMass() / this.mass;
         if (mass > home.getMass()) {
             System.out.printf("I am %s and I will nest there with %s my family members!\n", name, d);

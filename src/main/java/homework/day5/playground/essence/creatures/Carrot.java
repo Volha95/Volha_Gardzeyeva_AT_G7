@@ -5,7 +5,4 @@ public class Carrot extends Vegetable {
         super(mass, name);
         this.mass = mass;
     }
-
-    public Carrot() {
-    }
 }
