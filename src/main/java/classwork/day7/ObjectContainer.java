@@ -1,4 +1,4 @@
-package classwork;
+package classwork.day7;
 
 public class ObjectContainer {
     Object[] objects = new Object[10];
