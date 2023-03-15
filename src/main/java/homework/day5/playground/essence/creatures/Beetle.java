@@ -12,11 +12,6 @@ public class Beetle extends Insect implements Crawlable {
         this.name = name;
     }
 
-    public Beetle(String direction, int distance) {
-        this.direction = direction;
-        this.distance = distance;
-    }
-
     Carrot home = new Carrot();
 
     public String toString() {
