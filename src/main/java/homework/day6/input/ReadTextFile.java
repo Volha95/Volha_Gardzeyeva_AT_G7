@@ -16,14 +16,14 @@ public class ReadTextFile {
         Matcher m;
         Pattern punct = Pattern.compile("\\p{Punct}");
         String[] arrayText = data.split("\\s");
-        for (String s : arrayText) {
+        for (String str : arrayText) {
             int count = 0;
-            m = punct.matcher(s);
+            m = punct.matcher(str);
             while (m.find()) {
                 ++count;
             }
             puncts += count;
-            if (count != s.length()) {
+            if (count != str.length()) {
                 ++words;
             }
         }
