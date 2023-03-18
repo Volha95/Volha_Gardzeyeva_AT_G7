@@ -33,6 +33,5 @@ public class CrawlableProcessorRunner {
         crawlableProcessor.runCrawlable(aBeetle, "to the left");
         crawlableProcessor.runCrawlable(aCrocodile, "back", 37);
         crawlableProcessor.runCrawlable(anonymousCrawlable, "down", 37);
-
     }
 }

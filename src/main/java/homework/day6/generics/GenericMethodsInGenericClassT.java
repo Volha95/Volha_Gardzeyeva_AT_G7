@@ -1,11 +1,6 @@
-package homework.day6;
+package homework.day6.generics;
 
 public class GenericMethodsInGenericClassT<T> {
-    T obj1;
-    T obj2;
-    T obj3;
-    T obj4;
-    String characters;
 
     public void genericMethodOneGenArg(T obj1) {
         System.out.printf("I am an object of %s class\n", obj1.getClass().getSimpleName());
