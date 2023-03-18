@@ -2,10 +2,7 @@ package homework.day6.generics;
 
 
 public class GenericMethodsInGenericClassTwoParams<X, Y> {
-    X objX;
-    Y objY;
-    String str;
-
+    
     public String genericMethodGenArgs(X objX) {
         return "I received 1 argument of type: " + objX.getClass().getSimpleName() + " class";
     }

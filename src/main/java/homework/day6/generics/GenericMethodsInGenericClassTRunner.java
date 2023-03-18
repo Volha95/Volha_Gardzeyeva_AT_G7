@@ -9,7 +9,6 @@ import homework.day5.playground.essence.craft.field.Motorbike;
 import homework.day5.playground.essence.craft.hand.*;
 import homework.day5.playground.essence.creatures.*;
 import homework.day5.playground.essence.material.*;
-import homework.day6.generics.GenericMethodsInGenericClassT;
 
 public class GenericMethodsInGenericClassTRunner {
     public static void main(String[] args) {
