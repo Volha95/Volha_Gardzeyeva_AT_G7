@@ -7,21 +7,23 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-public class Figures {
+public class FiguresList {
     public static void main(String[] args) {
 
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
         File file = new File("figures.txt");
-        int count = 0;
 
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(file));
             for (String figure : figures) {
-                out.write(figure + " ");
+                out.write(figure + "-");
             }
+            out.close();
         } catch (IOException e) {
-            System.out.println();
+            System.out.println("IOException");
         }
+
+        int count = 0;
         for (String figure : figures) {
             if (!figure.contains("и")) {
                 count++;

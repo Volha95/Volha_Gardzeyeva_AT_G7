@@ -18,7 +18,7 @@ public class CitiesList {
         int count = 0;
 
         for (String city : cities) {
-            for (int i = 0; i <city.length(); i++){
+            for (int i = 0; i < city.length(); i++) {
                 count++;
                 sum += count;
             }

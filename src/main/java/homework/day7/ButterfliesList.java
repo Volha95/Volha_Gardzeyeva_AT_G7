@@ -3,7 +3,7 @@ package homework.day7;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Butterflies {
+public class ButterfliesList {
     public static void main(String[] args) {
 
         List<String> butterflies = new ArrayList<>();
