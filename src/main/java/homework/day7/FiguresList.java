@@ -20,7 +20,7 @@ public class FiguresList {
             }
             out.close();
         } catch (IOException e) {
-            System.out.println("IOException");
+            System.out.println("IOException appears if the file was not found in the file system");
         }
 
         int count = 0;

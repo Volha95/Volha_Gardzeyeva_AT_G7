@@ -40,7 +40,7 @@ public class CarsList {
                 }
             }
         } catch (ConcurrentModificationException e) {
-            System.out.println("ConcurrentModificationException");
+            System.out.println("ConcurrentModificationException exception appears when there is a concurrent modification of an object, when such modification is not allowed");
         }
 
         for (String car : cars) {
