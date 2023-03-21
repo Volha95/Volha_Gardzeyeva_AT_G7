@@ -12,9 +12,9 @@ public class ButterfliesList {
         butterflies.add("Aglais io");
         butterflies.add("Common blue");
 
-        char ch = '"';
+
         for (String butterfly : butterflies) {
-            System.out.println(ch + butterfly + ch);
+            System.out.printf("\"%s\"\n", butterfly);
         }
 
         int count = 0;
