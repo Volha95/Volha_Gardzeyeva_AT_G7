@@ -22,7 +22,7 @@ public class NumbersList {
 
         Collections.sort(numbers);
 
-        for (int i = 0; i < numbers.size(); i++){
+        for (int i = 0; i < numbers.size(); i++) {
             System.out.print(numbers.get(i) + " ");
         }
         System.out.println();

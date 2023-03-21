@@ -16,7 +16,7 @@ public class FiguresList {
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(file));
             for (String figure : figures) {
-                out.write(figure + "-");
+                out.write("-" + figure + " ");
             }
             out.close();
         } catch (IOException e) {
