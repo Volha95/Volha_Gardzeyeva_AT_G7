@@ -13,17 +13,12 @@ public class CitiesList {
         for (String city : cities) {
             System.out.println(city);
         }
-
-        int sum = 0;
         int count = 0;
 
         for (String city : cities) {
-            for (int i = 0; i < city.length(); i++) {
-                count++;
-                sum += count;
+            count = count + city.length();
             }
-        }
-        System.out.println(sum);
+        System.out.println(count);
 
         for (int i = 0; i < cities.size(); i++) {
             System.out.print(cities.get(i) + " ");
