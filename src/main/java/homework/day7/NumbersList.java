@@ -14,10 +14,8 @@ public class NumbersList {
 
         int sum = 0;
         for (int number : numbers) {
-            for (int i = 0; i < number; i++) {
-                sum++;
+                sum += number;
             }
-        }
         System.out.println(sum);
 
         Collections.sort(numbers);
