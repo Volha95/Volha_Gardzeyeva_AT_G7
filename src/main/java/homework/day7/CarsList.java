@@ -29,16 +29,10 @@ public class CarsList {
         }
         System.out.println();
 
-        try {
-            for (String car : cars) {
-                for (int i = 0; i < cars.size(); i++) {
-                    if (car.length() > 4) {
-                        cars.remove(car);
-                    }
-                }
+        for (int i = 0; i < cars.size(); i++) {
+            if (cars.get(i).length() > 4) {
+                cars.remove(i--);
             }
-        } catch (ConcurrentModificationException e) {
-            System.out.println("ConcurrentModificationException exception appears when there is a concurrent modification of an object, when such modification is not allowed");
         }
 
         for (String car : cars) {
