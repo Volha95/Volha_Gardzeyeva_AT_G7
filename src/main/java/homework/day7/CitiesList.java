@@ -13,11 +13,11 @@ public class CitiesList {
         for (String city : cities) {
             System.out.println(city);
         }
-        int count = 0;
 
+        int count = 0;
         for (String city : cities) {
             count = count + city.length();
-            }
+        }
         System.out.println(count);
 
         for (int i = 0; i < cities.size(); i++) {
