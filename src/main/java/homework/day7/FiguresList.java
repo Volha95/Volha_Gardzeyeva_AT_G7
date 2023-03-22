@@ -11,14 +11,13 @@ public class FiguresList {
     public static void main(String[] args) {
 
         List<String> figures = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
+
         File file = new File("figures.txt");
 
-        try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file));
+        try (BufferedWriter out = new BufferedWriter(new FileWriter(file))) {
             for (String figure : figures) {
                 out.write("-" + figure + " ");
             }
-            out.close();
         } catch (IOException e) {
             System.out.println("IOException appears if the file was not found in the file system");
         }
@@ -35,7 +34,13 @@ public class FiguresList {
             System.out.print(figures.get(i) + " ");
         }
         System.out.println();
-        figures.add(2, "Треугольник");
+
+        try {
+            figures.add(2, "Треугольник");
+        }catch (UnsupportedOperationException e) {
+            System.out.println("UnsupportedOperationException");
+        }
+        System.out.println();
 
         for (String figure : figures) {
             System.out.print(figure + " ");
