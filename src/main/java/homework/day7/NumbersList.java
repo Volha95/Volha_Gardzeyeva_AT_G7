@@ -29,7 +29,7 @@ public class NumbersList {
 
         Collections.reverse(numbers);
 
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             System.out.print(number + " ");
         }
     }
