@@ -8,12 +8,12 @@ public class NumbersList {
     public static void main(String[] args) {
         List<Integer> numbers = Arrays.asList(3342, 34, 79, 23426, 68, 1324, 55, 7699);
 
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             System.out.println(number);
         }
 
         int sum = 0;
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             for (int i = 0; i < number; i++) {
                 sum++;
             }
