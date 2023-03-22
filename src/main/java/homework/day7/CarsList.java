@@ -20,16 +20,14 @@ public class CarsList {
         cars.add("Ауди");
 
         File file = new File("cars.txt");
-        char ch = '"';
-        try {
-            BufferedWriter out = new BufferedWriter(new FileWriter(file));
+        try (BufferedWriter out = new BufferedWriter(new FileWriter(file))) {
             for (String car : cars) {
-                out.write(ch + car + ch + "\n");
+                out.write("\"" + car + "\"\n");
             }
-            out.close();
         } catch (IOException ex) {
-            System.out.println("IOException");
+            System.out.println("IOException appears if the file was not found in the file system");
         }
+        System.out.println();
 
         try {
             for (String car : cars) {
