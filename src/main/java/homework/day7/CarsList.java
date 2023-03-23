@@ -22,7 +22,7 @@ public class CarsList {
         File file = new File("cars.txt");
         try (BufferedWriter out = new BufferedWriter(new FileWriter(file))) {
             for (String car : cars) {
-                out.write("\"" + car + "\"\n");
+                out.write("-\"" + car + "\"\n");
             }
         } catch (IOException ex) {
             System.out.println("IOException appears if the file was not found in the file system");
