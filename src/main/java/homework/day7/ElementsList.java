@@ -19,14 +19,13 @@ public class ElementsList {
         System.out.println();
 
         int countWords = 0;
-
         for (String element : elements) {
-            for (int i = 0; i < element.length(); i++) {
-                if (element.charAt(i) == ' ' || element.charAt(i) == '-') {
-                    countWords++;
-                }
+            String[] array = element.split("\\b\\w+?\\b");
+            if (array.length > 1) {
+                countWords++;
             }
         }
+
         System.out.println(countWords);
 
         for (int i = 0; i < elements.size(); i++) {
