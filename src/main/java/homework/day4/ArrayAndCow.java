@@ -16,10 +16,10 @@ public class ArrayAndCow {
 
     }
 
-    public void arraySum(int[] array, int n) {
+    public void arraySum(int[] myArray, int n) {
         int sum = 0;
-        for (int i = n; i < array.length; i = i + n) {
-            sum = sum + array[i - 1];
+        for (int i = n; i < myArray.length; i = i + n) {
+            sum = sum + myArray[i - 1];
         }
         System.out.println("Сумма элементов массива: " + sum);
     }
