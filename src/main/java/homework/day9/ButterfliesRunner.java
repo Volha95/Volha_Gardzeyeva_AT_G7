@@ -10,7 +10,7 @@ public class ButterfliesRunner {
         butterflies.add("Common blue");
         butterflies.add("Swallowtail");
         butterflies.add("Aglais io");
-        butterflies.add("Common blue)");
+        butterflies.add("Common blue");
 
         char ch = '"';
         butterflies.stream()
