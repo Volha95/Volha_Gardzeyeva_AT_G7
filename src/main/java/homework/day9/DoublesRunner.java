@@ -8,9 +8,9 @@ public class DoublesRunner {
         Stream<Double> doubles = Stream.of(33.42, 34.3, 0.79, 2.3426, 6.8, 13.24, 5.5, 769.9);
 
         System.out.println(doubles.map(Math::round)
-                .flatMap(s -> Stream.generate(() -> (int) (Math.random() * s.intValue())).limit(1))
+                .map(s -> (int) (Math.random() * s.intValue()))
                 .distinct()
-                .flatMap(s -> Stream.generate(() -> new Bubble(s, "Bubble vol-" + s)).limit(1))
+                .map(s -> new Bubble(s, "Bubble vol-" + s))
                 .peek(System.out::println)
                 .mapToInt(Bubble::getVolume).sum());
     }
