@@ -15,13 +15,13 @@ public class WaterRunner {
 
         System.out.println(water.filter(s -> !s.getColor().equals("Прозрачная"))
                 .sorted((o1, o2) -> -o1.getSmell().compareTo(o2.getSmell()))
-                .flatMap(s -> Stream.generate(() -> {
+                .map(s ->  {
                     if (s.getSmell().contains("ы")) {
                         return new Water(s.getColor(), s.getSmell().replace("ы", "ыы"));
                     } else {
                         return new Water(s.getColor(), s.getSmell());
                     }
-                }).limit(1))
+                })
                 .map(Water::getSmell)
                 .collect(Collectors.joining()).length());
     }
