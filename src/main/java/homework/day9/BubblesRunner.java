@@ -17,7 +17,7 @@ public class BubblesRunner {
         System.out.println(bubbles.stream()
                 .filter(s -> s.getVolume() > 3)
                 .sorted((Comparator.comparing(Bubble::getName)))
-                .flatMap(s -> Stream.generate(() -> new Bubble(s.getVolume() * 3, s.getName())).limit(1))
+                .map(s -> new Bubble(s.getVolume() * 3, s.getName()))
                 .mapToInt(Bubble::getVolume).sum());
     }
 }
