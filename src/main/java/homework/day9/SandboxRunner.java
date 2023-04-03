@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class SandboxRunner {
@@ -20,13 +21,15 @@ public class SandboxRunner {
         sandbox.add(new Sand(11, "Речной"));
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("SandboxMap.txt"))) {
-            writer.write(String.valueOf(sandbox.stream().filter(s -> s.getWeight() > 9 && s.getName().contains("ч"))
+            for (Map.Entry<Integer, String> sand : sandbox.stream()
+                    .filter(s -> s.getWeight() > 9 && s.getName().contains("ч"))
                     .sorted(Comparator.comparing(Sand::getWeight))
                     .map(s -> new Sand(s.getWeight() * 2, s.getName().toUpperCase()))
-                    .collect(Collectors.toMap(Sand::getWeight, Sand::getName))));
+                    .collect(Collectors.toMap(Sand::getWeight, Sand::getName)).entrySet()) {
+                writer.write(sand.getValue() + ":" + sand.getKey() + "\n");
+            }
         } catch (IOException ex) {
-            System.out.println("IOException - запись в файл невозможна");
+            System.out.println("IOException - невозможно осуществить запись в файл");
         }
     }
 }
-
