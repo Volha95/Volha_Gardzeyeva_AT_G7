@@ -20,7 +20,18 @@ public class NumbersModRunner {
                         }
                 )
                 .distinct()
+                .map(s -> {
+                    for (int i = 0; i < 10; i++)
+                        s = s.replaceAll(numbers[i], String.valueOf(i));
+                    return s;
+                })
                 .sorted(Collections.reverseOrder())
+                .map(s -> {
+                            for (char c = '0'; c <= '9'; ++c)
+                                s = s.replaceAll(String.valueOf(c), numbers[c - '0'] + ' ');
+                            return s;
+                        }
+                )
                 .forEach(System.out::println);
     }
 }
